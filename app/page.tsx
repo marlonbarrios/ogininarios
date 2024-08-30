@@ -11,10 +11,10 @@ fal.config({
 const seed = Math.floor(Math.random() * 100000);
 
 export default function Home() {
-  const [input, setInput] = useState('realistic only one human body of different   genders, ethnicities, ages and epochs with strange sculptural transparent  colorful goggles and body armor the style of bauhaus and mondrian,  dramatic light and plain background, calder mobiles hats, photo-realistic ');
+  const [input, setInput] = useState('create an speculative man or a woman or nonbinary smiling  proud faces , wisdom and knowledge, create new materials and colors differnet ages and kinds of bodies,  with futuristic indigenous bioluminescent symbionts peaceful costumes as if Europe never existed, non white');
   const [image, setImage] = useState<string | null>(null);
-  const [strength, setStrength] = useState(0.49);
-  const [audioSrc, setAudioSrc] = useState('/bauhaus.mp3');
+  const [strength, setStrength] = useState(0.50);
+  const [audioSrc, setAudioSrc] = useState('/overcast.wav');
 
   const webcamRef = useRef<Webcam>(null);
 
@@ -80,12 +80,9 @@ export default function Home() {
 
   return (
     <main className="p-12">
-      <p className="text-xl mb-2">bauhaus time traveler | duet in <a href='https://en.wikipedia.org/wiki/Latent_spacelatent '>latent space</a> | concept, programming, sound design and performance by <a href='https://marlonbarrios.github.io/'>marlon barrios solano</a></p>
-      <p className="text-xl mb-2">created during art and research residency at <a href='https://lakestudiosberlin.com/'>Lake Studios Berlin</a> | February 2024</p>
-     
-      
-      <input className='border rounded-lg p-2 w-full mb-2' value={input} onChange={(e) => setInput(e.target.value)}/>
-      <p><input type="range" min="0" max="1" step="0.01" value={strength} onChange={(e) => setStrength(parseFloat(e.target.value))}/> | Strength: {strength}</p>
+                <p className="text-xl mb-2">Pangea Peoples | Pangea-AI </p>
+      {/* <input className='border rounded-lg p-2 w-full mb-2' value={input} onChange={(e) => setInput(e.target.value)}/>
+      <p><input type="range" min="0" max="1" step="0.01" value={strength} onChange={(e) => setStrength(parseFloat(e.target.value))}/> | Strength: {strength}</p> */}
       <div className='flex gap-4'>
      
         <div className="w-[650px] h-[650px] bg-gray-200" style={{ transform: 'scaleX(-1)' }}>
@@ -102,6 +99,8 @@ export default function Home() {
           <div className="w-[1050px] h-[1050px]">
             <Image src={image} width={1050} height={1050} alt="Processed image" layout="responsive"/>
 
+            <p className="text-xl mb-2">Concept, programming and music by Marlon Barrios Solano| Maker in Residency at <a href='https://arts.ufl.edu/directory/profile/236771'>CAME Center for Arts, Migration and Entrepreneurship | Decolonial Consutant Maria Luisa Angulo</a> | August 2024</p>
+            <p className="text-xl mb-2"></p>
           </div>
         )}
        
