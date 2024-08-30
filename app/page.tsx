@@ -81,6 +81,7 @@ export default function Home() {
   return (
     <main className="p-12">
                 <p className="text-xl mb-2">Pangea Peoples | Pangea-AI </p>
+                <p className="text-xl mb-2">Concept, programming and music by Marlon Barrios Solano| Maker in Residency at <a href='https://arts.ufl.edu/directory/profile/236771'>CAME Center for Arts, Migration and Entrepreneurship | Decolonial Consutant Maria Luisa Angulo</a> | August 2024</p>
       {/* <input className='border rounded-lg p-2 w-full mb-2' value={input} onChange={(e) => setInput(e.target.value)}/>
       <p><input type="range" min="0" max="1" step="0.01" value={strength} onChange={(e) => setStrength(parseFloat(e.target.value))}/> | Strength: {strength}</p> */}
       <div className='flex gap-4'>
@@ -88,9 +89,11 @@ export default function Home() {
         <div className="w-[650px] h-[650px] bg-gray-200" style={{ transform: 'scaleX(-1)' }}>
           <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" width={650} height={650} className="w-full h-full"/>
           <div className="audio-player my-4">
-          <p><audio controls src={audioSrc} style={{ transform: 'scaleX(-1)' }} >
-            Your browser does not support the audio element.
-          </audio></p>
+          <p>
+  <audio controls src={audioSrc} style={{ transform: 'scaleX(-1)' }} loop>
+    Your browser does not support the audio element.
+  </audio>
+</p>
         </div>
 
         </div>
@@ -99,13 +102,14 @@ export default function Home() {
           <div className="w-[1050px] h-[1050px]">
             <Image src={image} width={1050} height={1050} alt="Processed image" layout="responsive"/>
 
-            <p className="text-xl mb-2">Concept, programming and music by Marlon Barrios Solano| Maker in Residency at <a href='https://arts.ufl.edu/directory/profile/236771'>CAME Center for Arts, Migration and Entrepreneurship | Decolonial Consutant Maria Luisa Angulo</a> | August 2024</p>
-            <p className="text-xl mb-2"></p>
+          
           </div>
+          
         )}
        
       </div>
-
+     
+    
     </main>
   );
 }
