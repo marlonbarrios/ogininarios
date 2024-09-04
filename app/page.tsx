@@ -81,7 +81,8 @@ export default function Home() {
   return (
     <main className="p-12">
                 <p className="text-xl mb-2">Pangea Peoples | Pangea-AI </p>
-                <p className="text-xl mb-2">Concept, programming and music by Marlon Barrios Solano| Maker in Residency at <a href='https://arts.ufl.edu/directory/profile/236771'>CAME Center for Arts, Migration and Entrepreneurship | Decolonial Consutant Maria Luisa Angulo</a> | August 2024</p>
+                <p className="text-xl mb-2">Created by Marlon Barrios Solano and Maria Luisa Angulo | Pangea-AI Project| Programming, AI design and music by Marlon Barrios Solano | Maker in Residency at <a href='https://arts.ufl.edu/directory/profile/236771'>CAME Center for Arts, Migration and Entrepreneurship </a> | August 2024</p>
+                <p className="text-xl mb-2">Powered by<a href='https://fal.ai/'>Fal.ai</a></p>
       {/* <input className='border rounded-lg p-2 w-full mb-2' value={input} onChange={(e) => setInput(e.target.value)}/>
       <p><input type="range" min="0" max="1" step="0.01" value={strength} onChange={(e) => setStrength(parseFloat(e.target.value))}/> | Strength: {strength}</p> */}
       <div className='flex gap-4'>
